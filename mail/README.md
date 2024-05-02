@@ -23,11 +23,25 @@ giorgio.messina72@gmail.it
         ---iterare tra gli elementi con un cliclo for---
         for(let i = userMail; i < mailArray.lenght; i++){}
 
-        ---se tra gli elementi dell array si trova la mail dell'utente la ricerca si interrompe e si restituisce true--
+        ---se tra gli elementi dell array si trova la mail 
+        dell'utente la ricerca si interrompe e si restituisce true--
+
+        --definiamo una variabile esterna e poniamola in false
+
+        let mailFound = flase;
+
         if( userMail === mailArray[i]){
-            console.log('La tua e-mail è stata trovata tra quelle autorizzate!');
+            //se la mail viene trovata mailfound diventa true
+            mailFound=true;
+            //e interrompiamo il ciclo
+            break;
+        }
+
+        //condizionali per comunicare l'esito
+        if(mailFound = true){
+            console.log("la tua mail è autoriazzata puoi accedere);
         }else{
-            console.log('la tua mail non risulta registrata')
+            console.log("la tua mail non è aiutorizzata, non puoi accedere);
         }
 
 
