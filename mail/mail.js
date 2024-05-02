@@ -26,10 +26,10 @@ for (let i = 0; i < mailArray.length; i++){
 }
 
 //condizionali per comunicare l'esito
-if(mailFound = true){
+if(mailFound){
     console.log("la tua mail è autorizzata, puoi accedere")
     alert("la tua mail è autorizzata, puoi accedere")
 }else{
-    console.log("la tua email nono è autorizzata, non puoi accedere")
-    alert("la tua mail è autorizzata, puoi accedere")
+    console.log("la tua email non è autorizzata, non puoi accedere")
+    alert("la tua mail non è autorizzata, non puoi accedere")
 }
