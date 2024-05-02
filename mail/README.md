@@ -4,7 +4,7 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 
 //richiesta della mail dell'utente tramite prompt o imput
-cont userMail = prompt("inserisci la tua mail");
+const userMail = prompt("inserisci la tua mail");
 
 //creazione di un array con lista mail:
 const mailArray = []
