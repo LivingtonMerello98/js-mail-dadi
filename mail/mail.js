@@ -9,12 +9,27 @@ const userMail = prompt("inserisci la tua mail")
 
 const mailArray = ['mario.rossi82@gmail.com','enzo.fergola99@gmail.com','enrico.rossi10@hotmail.it','giorgio.messina72@gmail.it']
 
+//definiamo variabile esterna
+let mailFound = false;
+
 //iteriamo tra gli elementi dell'array
 for (let i = 0; i < mailArray.length; i++){
-    //condizioni per verificare se all'interno dell'array si trova la userMail inserita
-    if( userMail === mailArray[i]){
-        console.log("la tua mail è registrata, puoi accedere")
-    }else{
-        console.log("la tua mail non è registrata, non puoi accedere")
+
+    //condizioni
+    if(userMail === mailArray[i]){
+        //diventa true
+        mailFound = true;
+        //interrompiamo il ciclo
+        break;
     }
+
+}
+
+//condizionali per comunicare l'esito
+if(mailFound = true){
+    console.log("la tua mail è autorizzata, puoi accedere")
+    alert("la tua mail è autorizzata, puoi accedere")
+}else{
+    console.log("la tua email nono è autorizzata, non puoi accedere")
+    alert("la tua mail è autorizzata, puoi accedere")
 }

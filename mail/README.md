@@ -6,6 +6,8 @@ stampa un messaggio appropriato sull’esito del controllo.
 //richiesta della mail dell'utente tramite prompt o imput
 const userMail = prompt("inserisci la tua mail");
 
+----inserire "mario.rossi82@gmail.com" per testare demo----
+
 //creazione di un array con lista mail:
 const mailArray = []
 
@@ -22,9 +24,6 @@ giorgio.messina72@gmail.it
 
         ---iterare tra gli elementi con un cliclo for---
         for(let i = userMail; i < mailArray.lenght; i++){}
-
-        ---se tra gli elementi dell array si trova la mail 
-        dell'utente la ricerca si interrompe e si restituisce true--
 
         --definiamo una variabile esterna e poniamola in false
 
